@@ -1,0 +1,10 @@
+<app-sidebar (sideBarOpened)="changeSideBar($event)"></app-sidebar>
+<div [ngStyle]="{ 'margin-left': isOpen ? '12rem' : ' 5rem' }">
+    <app-navbar></app-navbar>
+    <div class="flex items-center gap-4 ml-8" (click)="navigateToMain()">
+    Home > @if (urlsPath.length) { @for (item of urlsPath; track $index) { @if
+    (item.length) {
+    <a routerLink="../">{{ item }} ></a>
+    } } }
+  </div>
+  <router-outlet></router-outlet>

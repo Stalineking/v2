@@ -1,0 +1,37 @@
+<div class="flex flex-col lg:flex-row items-center justify-between mt-[4rem] mb-[2rem] mr-4">
+  <form class="flex items-center lg:w-full lg:max-w-[26rem] lg:pl-2 mt-4 lg:mt-0">
+    <label for="voice-search" class="sr-only">Search</label>
+    <div class="relative w-full">
+      <div class="absolute inset-y-0 start-0 flex items-center pl-3 pointer-events-none">
+        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 21">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+        </svg>
+      </div>
+      <input type="text" id="voice-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 py-2.5 pr-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search By..." required />
+    </div>
+    <button type="submit" class="inline-flex items-center py-2.5 px-3 ms-2 text-sm font-medium text-gray-400 bg-white rounded-lg border border-gray-200 hover:bg-gray-100">
+      <svg width="20" height="20" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.3183 1.6753C15.6634 1.6753 18.9417 1.95699 22.1326 2.49852C22.7798 2.60779 23.246 3.1736 23.246 3.82927V5.09688C23.246 5.45564 23.1753 5.81089 23.0381 6.14234C22.9008 6.4738 22.6995 6.77496 22.4459 7.02865L15.8504 13.6241C15.5967 13.8778 15.3955 14.179 15.2582 14.5104C15.1209 14.8419 15.0502 15.1971 15.0502 15.5559V19.1098C15.0503 19.6173 14.9091 20.1148 14.6423 20.5465C14.3755 20.9782 13.9937 21.3271 13.5398 21.554L9.58639 23.5307V15.5559C9.58639 15.1971 9.51573 14.8419 9.37844 14.5104C9.24115 14.179 9.03992 13.8778 8.78624 13.6241L2.19077 7.02865C1.93709 6.77496 1.73586 6.4738 1.59857 6.14234C1.46128 5.81089 1.39062 5.45564 1.39063 5.09688V3.82927C1.39063 3.1736 1.85687 2.60779 2.50404 2.49852C5.74661 1.94952 9.0296 1.67415 12.3183 1.6753Z" stroke="#667085" stroke-width="2.18554" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <span class="ml-2"> Filter </span>
+    </button>
+  </form>
+
+  <div class="flex items-center mt-4 lg:mt-0 space-x-4">
+    <button type="submit" (click)="openImportDialog()" class="flex items-center justify-center py-2.5 px-3 bg-blue-900 hover:bg-blue-800 text-white font-normal py-2 px-4 border border-gray-400 rounded-md lg:w-auto">
+      <img src="assets/importcsv.svg" />
+      <span class="ml-2"> Import CSV </span>
+    </button>
+    @if (!deviceButton) {
+    <button type="button" (click)="onAddHotelClick()" class="flex items-center justify-center bg-blue-900 hover:bg-blue-800 text-white py-2 px-4 border border-gray-400 rounded-md lg:w-auto space-x-2">
+      <img src="assets/addhotel.svg"/>
+      <span class="ml-2">Add Hotel</span>
+    </button>
+    }@else {
+    <button type="button" (click)="openDialog()" class="flex items-center justify-center bg-blue-900 hover:bg-blue-800 text-white py-2 px-4 border border-gray-400 rounded-md lg:w-auto space-x-2">
+      <img src="assets/addhotel.svg" />
+      <span class="">Add device</span>
+    </button>
+    }
+  </div>
+</div>

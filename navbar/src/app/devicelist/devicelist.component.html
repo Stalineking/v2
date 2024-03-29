@@ -1,0 +1,227 @@
+<app-card></app-card>
+<app-input></app-input>
+<div class="mx-2 sm:flex-col">
+  <div class="overflow-x-auto">
+    <table class="min-w-full divide-y divide-gray-200">
+      <thead class="bg-slate-100 border-b-8 border-white">
+        <tr>
+          <th
+            class="px-6 py-3 text-left text-xs font-medium text-blue-900 uppercase dark:text-gray-400"
+          >
+            <input class="ml-2" type="checkbox" />
+          </th>
+          <th
+            class="pl-6 py-3 text-left text-xs font-medium text-blue-900 uppercase dark:text-gray-400"
+          >
+            <div class="flex items-center justify-left">
+              Type
+              <img src="assets/icondevice.svg" class="ml-1 rounded-full" />
+            </div>
+          </th>
+          <th
+            class="pl-6 py-3 text-left text-xs font-medium text-blue-900 uppercase dark:text-gray-400"
+          >
+            <div class="flex items-center justify-left">
+              IMEI
+              <img src="assets/icondevice.svg" class="ml-2 rounded-full" />
+            </div>
+          </th>
+          <th
+            class="pl-6 py-3 text-left text-xs font-medium text-blue-900 uppercase dark:text-gray-400"
+          >
+            <div class="flex items-center justify-left">
+              GSF ID
+              <img src="assets/icondevice.svg" class="ml-1 rounded-full" />
+            </div>
+          </th>
+          <th
+            class="pl-6 py-3 text-left text-xs font-medium text-blue-900 uppercase dark:text-gray-400"
+          >
+            <div class="flex items-center justify-left">
+              Brand
+              <img
+                src="assets/icondevices.svg"
+                class="bg-blue-900 rounded-full ml-2"
+              />
+            </div>
+          </th>
+          <th
+            class="pl-6 py-3 text-left text-xs font-medium text-blue-900 uppercase dark:text-gray-400"
+          >
+            <div class="flex items-center justify-left">
+              Model
+              <img src="assets/icondevice.svg" class="ml-1 rounded-full" />
+            </div>
+          </th>
+          <th
+            class="px-6 py-3 text-left text-xs font-medium text-blue-900 uppercase dark:text-gray-400"
+          >
+            <div class="flex items-center justify-left">
+              Assigned To
+              <img
+                src="assets/icondevices.svg"
+                class="bg-blue-900 rounded-full ml-2"
+              />
+            </div>
+          </th>
+
+          <th
+            class="pl-6 py-3 text-left text-xs font-medium text-blue-900 uppercase dark:text-gray-400"
+          >
+            <div class="flex items-center justify-left">
+              Status
+              <img src="assets/icondevice.svg" class="ml-1 rounded-full" />
+            </div>
+          </th>
+          <th
+            class="px-6 py-3 text-left text-xs font-medium text-blue-900 uppercase dark:text-gray-400"
+          >
+            Actions
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="bg-white divide-y divide-gray-200 text-xs text-gray-700 uppercase cursor-pointer"
+      >
+        <ng-container *ngFor="let item of [1, 2, 3, 4, 5, 6]; let i = index">
+          <tr class="bg-gray-50 border-b-8 border-white">
+            <td class="px-6 py-4 whitespace-nowrap">
+              <input class="ml-2" type="checkbox" />
+            </td>
+            <td
+              class="px-6 py-4 text-blue-900 whitespace-nowrap"
+              (click)="toggleNewTable(i + 1)"
+            >
+              Phone
+            </td>
+            <td class="px-6 py-4 text-blue-900 whitespace-nowrap">
+              1555422125155
+            </td>
+            <td class="px-6 py-4 text-blue-900 whitespace-nowrap">
+              35D151VDV5151
+            </td>
+            <td class="px-6 py-4 text-blue-900 whitespace-nowrap">Logicom</td>
+            <td class="px-6 py-4 text-blue-900 whitespace-nowrap">Soler</td>
+            <td class="px-6 py-4 text-blue-900 whitespace-nowrap">
+              Maeies Ressort
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <span
+                [ngClass]="{
+                            'rounded-full': Avalaible,
+                            'text-blue-500': Avalaible,
+                            'bg-blue-200 bg-clip-padding': Avalaible,
+                            '':Avalaible,
+                            'text-yellow-500': !Avalaible && Used,
+                            'p-[0.5rem]': Avalaible,
+
+                        }"
+              >
+                {{ Avalaible ? "Available" : "Used" }}
+              </span>
+            </td>
+            <td class="px-10 py-4 whitespace-nowrap">
+              <img (click)="openSwapDevice()" src="assets/actionsicon.svg" />
+            </td>
+          </tr>
+
+          <tr *ngIf="openTable === i + 1">
+            <td colspan="9">
+              <span class="flex justify-left">
+                <img class="ml-12 my-4 rounded-lg" src="assets/soft.svg" />
+                <h1 class="pl-2 pt-4">Software</h1>
+              </span>
+              <tr>
+                <td colspan="5">
+                  <div class="mt-4 grid grid-cols-20 gap-4">
+                    <div class="flex items-center justify-between">
+                      <div class="flex justify-left ml-48">
+                        <div class="">|</div>
+                        <span class="text-sky-900 font-medium px-2 ps-3"
+                          >Mobile Number:</span
+                        >
+                        <span class="">21549452</span>
+                      </div>
+                      <div class="flex justify-left">
+                        <span class="text-sky-900 font-medium pl-8"
+                          >Fix Number:</span
+                        >
+                        <span class="ml-2">21549452</span>
+                      </div>
+                      <div class="flex justify-left">
+                        <span class="text-sky-900 font-medium pl-8 ps-3"
+                          >Fax:</span
+                        >
+                        <span class="ml-2">21549452</span>
+                      </div>
+                      <div class="flex justify-left">
+                        <span class="text-sky-900 font-medium ps-3"
+                          >Hotel Address:</span
+                        >
+                        <span class="ml-2"
+                          >Rue du Lac Huran,Les Berges de Lac,1053 Tunisia</span
+                        >
+                      </div>
+                      <div class="flex justify-end">
+                        <span class="text-sky-900 font-medium ps-3"
+                          >Email Address :</span
+                        >
+                        <span class="ml-2">Hotel.contact email.fr</span>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <span class="flex justify-left">
+                <img class="ml-12 my-4 rounded-lg" src="assets/hardware.svg" />
+                <h1 class="pl-2 pt-4">Hardware</h1>
+              </span>
+
+              <div class="flex justify-left ml-48">
+                <div class="mt-2">|</div>
+                <button
+                  type="button"
+                  class="flex items-center justify-between py-0.5 ml-2 px-2 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-blue-200 rounded border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                >
+                  <img src="assets/website.svg" />
+                  <span class="px-1 text-blue-900">Website</span>
+                </button>
+                <button
+                  type="button"
+                  class="flex items-center justify-between py-0.5 px-2 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-blue-200 rounded border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                >
+                  <img src="assets/facebook.svg" />
+                  <span class="px-1 text-blue-900">Facebook</span>
+                </button>
+                <button
+                  type="button"
+                  class="flex items-center justify-between py-0.5 px-2 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-blue-200 rounded border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                >
+                  <img src="assets/xplatform.svg" />
+                  <span class="px-1 text-blue-900">X Platform (Twitter)</span>
+                </button>
+                <button
+                  type="button"
+                  class="flex items-center justify-between py-0.5 px-2 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-blue-200 rounded border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                >
+                  <img src="assets/youtube.svg" />
+                  <span class="px-1 text-blue-900">Youtube</span>
+                </button>
+                <button
+                  type="button"
+                  class="flex items-center justify-between py-0.5 px-2 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-blue-200 rounded border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                >
+                  <img src="assets/trip.svg" />
+                  <span class="px-1 text-blue-900">TripAdvisor</span>
+                </button>
+              </div>
+              <ng-container> </ng-container>
+            </td></tr
+        ></ng-container>
+      </tbody>
+    </table>
+  </div>
+</div>
+<footer class="w-full mt-4 flex justify-center">
+  <app-pagination></app-pagination>
+</footer>

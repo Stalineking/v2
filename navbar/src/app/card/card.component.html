@@ -1,0 +1,154 @@
+<!-- <div class="flex justify-left">
+<button (click)="navigateToMainContain()" class="pl-4 flex justify-left">
+  {{NameComponent}} <img src="assets/arrowb.svg" class=" ml-2">
+</button>
+<button (click)="navigateToDevices()"class="pl-2 flex justify-left">
+  {{Name}} <img src="assets/arrowb.svg" class=" ml-2">
+</button>
+</div>
+<app-maincontain *ngIf=""></app-maincontain> -->
+
+<div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8 mb-2 mx-2 sm:mx-4 md:mx-8 lg:mx-24">
+  <div 
+      (click)="selectedCard(1)"
+      (mouseenter)="onMouseEnter(1)"
+      (mouseleave)="onMouseLeave(1)"
+      class="col-span-1 inline-block p-2 sm:w-full md:w-76 border border-gray-200 bg-white rounded-lg hover:bg-blue-900 shadow-md h-[9.748rem] w-[25.029rem]"
+      >
+      <div class="flex items-center justify-between">
+        <h1
+          class="pt-4 text-2xl font-bold flex"
+          [ngClass]="{ 'text-white': cardHovering[0], 'text-black': !cardHovering[0] }"
+          >
+          Total Hotels
+        </h1>
+        <p
+          class="pt-4 font-normal"
+          [ngClass]="{ 'text-white': cardHovering[0], 'text-black': !cardHovering[0] }"
+        >
+          35
+        </p>
+      </div>
+      <div class="flex items-center justify-between">
+        <svg width="40" height="58" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path [attr.fill]="colorSvg()" fill-rule="evenodd" clip-rule="evenodd" d="M10.3902 9.5998C10.3902 6.94884 12.5393 4.7998 15.1902 4.7998H34.3902C37.0412 4.7998 39.1902 6.94884 39.1902 9.5998V38.3998C40.5157 38.3998 41.5902 39.4743 41.5902 40.7998C41.5902 42.1253 40.5157 43.1998 39.1902 43.1998H30.5902C30.0379 43.1998 29.5902 42.7521 29.5902 42.1998V35.9998C29.5902 34.6743 28.5157 33.5998 27.1902 33.5998H22.3902C21.0648 33.5998 19.9902 34.6743 19.9902 35.9998V42.1998C19.9902 42.7521 19.5425 43.1998 18.9902 43.1998H10.3902C9.06475 43.1998 7.99023 42.1253 7.99023 40.7998C7.99023 39.4743 9.06475 38.3998 10.3902 38.3998V9.5998ZM17.5902 11.9998H22.3902V16.7998H17.5902V11.9998ZM22.3902 21.5998H17.5902V26.3998H22.3902V21.5998ZM27.1902 11.9998H31.9902V16.7998H27.1902V11.9998ZM31.9902 21.5998H27.1902V26.3998H31.9902V21.5998Z" />
+          </svg>   
+        <p
+          class="font-normal pt-6"
+          [ngClass]="{ 'text-white': cardHovering[0], 'text-black': !cardHovering[0] }"
+          >
+          *12.5% This Month
+        </p>
+      </div>
+    </div>
+  
+
+    <div
+    (click)="selectedCard(2)"
+    (mouseenter)="onMouseEnter(2)"
+    (mouseleave)="onMouseLeave(2)"
+    class="col-span-1 inline-block p-2 sm:w-full md:w-76 border border-gray-200 bg-white rounded-lg hover:bg-blue-900 shadow-md"
+  >
+    <div class="flex items-center justify-between">
+      <h1
+        class="pt-4 text-2xl font-bold flex"
+        [ngClass]="{ 'text-white': cardHovering[1], 'text-black': !cardHovering[1] }"
+        >
+        Active Hotels
+      </h1>
+      <p
+        class="pt-4 font-normal"
+        [ngClass]="{ 'text-white': cardHovering[1], 'text-black': !cardHovering[1] }"
+      >
+      29
+      </p>
+    </div>
+    <div class="flex items-center justify-between">
+      <svg width="37" height="39" viewBox="0 0 37 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3926 20.7241L0.5 28.3694L18.3926 38.301L36.2781 28.3694L18.3926 20.7241Z" fill="#010101" fill-opacity="0.6"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 28.3694L18.3926 38.301V0.477539L0.5 28.3694Z" fill="#005721"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3906 0.477539V38.301L36.2762 28.3694L18.3906 0.477539Z" fill="#00B544"/>
+        </svg>  
+      <p
+        class="font-normal pt-6"
+        [ngClass]="{ 'text-white': cardHovering[1], 'text-black': !cardHovering[1] }"
+        >
+        *12.5% This Month
+      </p>
+    </div>
+  </div>
+
+    
+
+
+  <div
+  (click)="selectedCard(3)"
+  (mouseenter)="onMouseEnter(3)"
+  (mouseleave)="onMouseLeave(3)"
+  class="col-span-1 inline-block p-2 sm:w-full md:w-76 border border-gray-200 bg-white rounded-lg hover:bg-blue-900 shadow-md"
+  >
+  <div class="flex items-center justify-between">
+    <h1
+      class="pt-4 text-2xl font-bold flex"
+      [ngClass]="{ 'text-white': cardHovering[2], 'text-black': !cardHovering[2] }"
+      >
+      Inactive Hotels
+    </h1>
+    <p
+      class="pt-4 font-normal"
+      [ngClass]="{ 'text-white': cardHovering[2], 'text-black': !cardHovering[2] }"
+    >
+    4
+    </p>
+  </div>
+  <div class="flex items-center justify-between">
+    <svg width="36" height="39" viewBox="0 0 36 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M17.8847 18.0547L35.7773 10.4094L17.8847 0.477801L-0.000792789 10.4094L17.8847 18.0547Z" fill="#010101" fill-opacity="0.6"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M35.7773 10.4094L17.8847 0.477778L17.8847 38.3013L35.7773 10.4094Z" fill="#C62828"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M17.8867 38.3013L17.8867 0.477779L0.0011869 10.4094L17.8867 38.3013Z" fill="#760F0F"/>
+      </svg> 
+    <p
+      class="font-normal pt-6"
+      [ngClass]="{ 'text-white': cardHovering[2], 'text-black': !cardHovering[2] }"
+      >
+      *12.5% This Month
+    </p>
+  </div>
+</div>
+  
+
+
+
+<div
+(click)="selectedCard(4)"
+(mouseenter)="onMouseEnter(4)"
+(mouseleave)="onMouseLeave(4)"
+class="col-span-1 inline-block p-2 sm:w-full md:w-76 border border-gray-200 bg-white rounded-lg hover:bg-blue-900 shadow-md"
+>
+<div class="flex items-center justify-between">
+  <h1
+    class="pt-4 text-2xl font-bold flex"
+    [ngClass]="{ 'text-white': cardHovering[3], 'text-black': !cardHovering[3] }"
+    >
+    Onboarding
+  </h1>
+  <p
+    class="pt-4 font-normal"
+    [ngClass]="{ 'text-white': cardHovering[3], 'text-black': !cardHovering[3] }"
+  >
+  2
+  </p>
+</div>
+<div class="flex items-center justify-between">
+  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.19944 11.9972C12.4193 11.8992 18.9975 9.1446 24.0008 4.6665C29.0041 9.1446 35.5823 11.8992 42.8021 11.9972C43.0643 13.559 43.2008 15.1635 43.2008 16.7999C43.2008 29.3395 35.1866 40.0074 24.0008 43.961C12.8149 40.0074 4.80078 29.3395 4.80078 16.7999C4.80078 15.1635 4.93725 13.559 5.19944 11.9972ZM32.8978 20.8969C33.8351 19.9596 33.8351 18.44 32.8978 17.5027C31.9606 16.5655 30.441 16.5655 29.5037 17.5027L21.6008 25.4057L18.4978 22.3027C17.5606 21.3655 16.041 21.3655 15.1037 22.3027C14.1665 23.24 14.1665 24.7596 15.1037 25.6969L19.9037 30.4969C20.841 31.4341 22.3606 31.4341 23.2978 30.4969L32.8978 20.8969Z" fill="#00B544"/>
+    </svg>
+  <p
+    class="font-normal pt-6"
+    [ngClass]="{ 'text-white': cardHovering[3], 'text-black': !cardHovering[3] }"
+    >
+    *12.5% This Month
+  </p>
+</div>
+</div>
+  

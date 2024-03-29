@@ -1,0 +1,41 @@
+<div class="mt-2 ml-2">
+    <h1 class="font-bold">Archive Hotel</h1>
+  <p>Are you sure you want to 
+    <span class="font-medium">archive this Hotel ?</span></p>
+  <hr>
+
+  <div class="flex justify-end">
+  <button class="bg-transparent text-Zinc-100 font-semibold mr-2 my-2 py-2 px-4 border border-grey-300 rounded" mat-button (click)="onCancel()">Cancel</button>
+  <button class="bg-red-500 text-white font-semibold mr-2 my-2 py-2 px-4 rounded"(click)="toggleClick()"
+   mat-button (click)="onDelete()">Delete</button>
+</div>
+</div>
+
+<div *ngIf="showConfirmation" class="fixed bottom-4 left-0 transform translate-x-1/2 z-50 shadow-lg">
+  <div class="bg-emerald-950 text-emerald-200 rounded-b emerald-200 px-4 py-3 rounded-lg shadow-md flex items-center" role="alert">
+      <div class="">
+        <svg width="31" height="24" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M15.8515 27.1341C22.0441 27.1341 27.0643 22.1139 27.0643 15.9213C27.0643 9.72863 22.0441 4.7085 15.8515 4.7085C9.65881 4.7085 4.63867 9.72863 4.63867 15.9213C4.63867 22.1139 9.65881 27.1341 15.8515 27.1341ZM19.4799 12.023C19.9039 11.5731 20.6898 11.6577 21.1257 12.023C21.6125 12.4311 21.5224 13.1048 21.1257 13.5258L15.1976 19.8164C14.8169 20.2204 13.9307 20.2382 13.5519 19.8164L10.5733 16.4997C10.1598 16.0392 10.1122 15.4555 10.5733 14.9969C10.9698 14.6025 11.8314 14.5653 12.219 14.9969L14.3946 17.4194L19.4799 12.023Z"
+            fill="#A9EBCA" />
+        </svg>
+      </div> 
+
+      <p class="text-sm pt-3">Momo Ressort has been successfully archived.</p>
+      <span class="mx-1">|</span>
+      <p class="text-sm pt-3">Undo</p>
+    </div>
+  </div>
+
+
+
+<!-- <div *ngIf="onClick" class="notification-container">
+  <div class="mx-2 relative sm:mx-auto max-w-sm flex flex-row items-center justify-between bg-green-200 p-3 text-sm leading-none font-medium rounded-xl whitespace-no-wrap">
+    <div class="inline-flex items-center text-green-500">
+      {{Name}} has been successfully archived
+    </div>
+    <div class="text-green-700 cursor-pointer hover:text-green-800">
+      Undo
+    </div>
+  </div>
+</div> -->

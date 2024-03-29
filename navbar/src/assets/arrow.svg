@@ -1,0 +1,22 @@
+        <svg width="24" height="24" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_b_400_4372)">
+        <rect width="34.2857" height="34.2857" rx="17.1429" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 34.7852 34.7144)" fill="#0F090C" fill-opacity="0.4"/>
+        <g opacity="0.8">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4248 17.5729L13.9994 11.0935C13.5238 10.6133 13.5238 9.83881 13.9994 9.35863C14.226 9.12924 14.5351 9.00021 14.8575 9.00021C15.1799 9.00021 15.489 9.12924 15.7156 9.35863L22.9991 16.7042C23.4762 17.1839 23.4762 17.9594 22.9991 18.4391L15.7159 25.7847C15.489 26.014 15.1799 26.1431 14.8575 26.1431C14.5351 26.1431 14.226 26.014 13.9991 25.7847C13.5238 25.3044 13.5238 24.5299 13.9997 24.0498L20.4248 17.5729Z" fill="url(#paint0_radial_400_4372)"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4248 17.5729L13.9994 11.0935C13.5238 10.6133 13.5238 9.83881 13.9994 9.35863C14.226 9.12924 14.5351 9.00021 14.8575 9.00021C15.1799 9.00021 15.489 9.12924 15.7156 9.35863L22.9991 16.7042C23.4762 17.1839 23.4762 17.9594 22.9991 18.4391L15.7159 25.7847C15.489 26.014 15.1799 26.1431 14.8575 26.1431C14.5351 26.1431 14.226 26.014 13.9991 25.7847C13.5238 25.3044 13.5238 24.5299 13.9997 24.0498L20.4248 17.5729Z" fill="white"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4248 17.5729L13.9994 11.0935C13.5238 10.6133 13.5238 9.83881 13.9994 9.35863C14.226 9.12924 14.5351 9.00021 14.8575 9.00021C15.1799 9.00021 15.489 9.12924 15.7156 9.35863L22.9991 16.7042C23.4762 17.1839 23.4762 17.9594 22.9991 18.4391L15.7159 25.7847C15.489 26.014 15.1799 26.1431 14.8575 26.1431C14.5351 26.1431 14.226 26.014 13.9991 25.7847C13.5238 25.3044 13.5238 24.5299 13.9997 24.0498L20.4248 17.5729Z" fill="white" fill-opacity="0.24" style="mix-blend-mode:overlay"/>
+        </g>
+        </g>
+        <defs>
+        <filter id="filter0_b_400_4372" x="-256.643" y="-256.714" width="548.571" height="548.571" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feGaussianBlur in="BackgroundImageFix" stdDeviation="128.571"/>
+        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_400_4372"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_400_4372" result="shape"/>
+        </filter>
+        <radialGradient id="paint0_radial_400_4372" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(18.4997 17.5716) scale(4.85714 8.57143)">
+        <stop stop-color="white"/>
+        <stop offset="1" stop-color="white"/>
+        </radialGradient>
+        </defs>
+        </svg>

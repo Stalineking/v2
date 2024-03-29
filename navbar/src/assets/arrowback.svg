@@ -1,0 +1,23 @@
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_b_209_16626)">
+      <rect y="24" width="24" height="24" rx="12" transform="rotate(-90 0 24)" fill="#0F090C" fill-opacity="0.4"/>
+      <g opacity="0.8">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0522 12.0009L14.55 7.46527C14.8829 7.12914 14.8829 6.58702 14.55 6.25089C14.3914 6.09032 14.175 6 13.9494 6C13.7237 6 13.5073 6.09032 13.3487 6.25089L8.25022 11.3928C7.91626 11.7286 7.91626 12.2714 8.25022 12.6072L13.3485 17.7491C13.5073 17.9097 13.7237 18 13.9494 18C14.175 18 14.3914 17.9097 14.5502 17.7491C14.8829 17.4129 14.8829 16.8708 14.5498 16.5347L10.0522 12.0009Z" fill="url(#paint0_radial_209_16626)"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0522 12.0009L14.55 7.46527C14.8829 7.12914 14.8829 6.58702 14.55 6.25089C14.3914 6.09032 14.175 6 13.9494 6C13.7237 6 13.5073 6.09032 13.3487 6.25089L8.25022 11.3928C7.91626 11.7286 7.91626 12.2714 8.25022 12.6072L13.3485 17.7491C13.5073 17.9097 13.7237 18 13.9494 18C14.175 18 14.3914 17.9097 14.5502 17.7491C14.8829 17.4129 14.8829 16.8708 14.5498 16.5347L10.0522 12.0009Z" fill="white"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0522 12.0009L14.55 7.46527C14.8829 7.12914 14.8829 6.58702 14.55 6.25089C14.3914 6.09032 14.175 6 13.9494 6C13.7237 6 13.5073 6.09032 13.3487 6.25089L8.25022 11.3928C7.91626 11.7286 7.91626 12.2714 8.25022 12.6072L13.3485 17.7491C13.5073 17.9097 13.7237 18 13.9494 18C14.175 18 14.3914 17.9097 14.5502 17.7491C14.8829 17.4129 14.8829 16.8708 14.5498 16.5347L10.0522 12.0009Z" fill="white" fill-opacity="0.24" style="mix-blend-mode:overlay"/>
+      </g>
+      </g>
+      <defs>
+      <filter id="filter0_b_209_16626" x="-180" y="-180" width="384" height="384" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feGaussianBlur in="BackgroundImageFix" stdDeviation="90"/>
+      <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_209_16626"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_209_16626" result="shape"/>
+      </filter>
+      <radialGradient id="paint0_radial_209_16626" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(11.3998 12) rotate(-180) scale(3.4 6)">
+      <stop stop-color="white"/>
+      <stop offset="1" stop-color="white"/>
+      </radialGradient>
+      </defs>
+      </svg>   
+

@@ -1,0 +1,114 @@
+
+<div class="overflow-hidden">
+  <div class="relative">
+    <img
+      src="assets/cover.svg"
+      (click)="onCancel()"
+      alt="Cover Photo"
+      class="w-full h-40  object-cover rounded-md" 
+    />
+
+  
+</div>
+  <span class="ml-1">Device information:</span>
+  <div class="mb-4 mx-2" >
+    <label
+      class="mt-2 mt-2  inline-block  text-blue-900 dark:text-neutral-400"
+      >Device Type</label>
+
+      <select class="relative m-0 px-2 block w-full min-w-0 flex-auto cursor-pointer rounded border border-solid border-secondary-500 bg-transparent bg-clip-padding py-[0.32rem] text-base font-normal text-surface transition duration-300 ease-in-out file:-mx-3 file:-my-[0.32rem] file:me-3 file:cursor-pointer file:overflow-hidden file:rounded-none file:border-0 file:border-e file:border-solid file:border-inherit file:bg-transparent file:px-3  file:py-[0.32rem] file:text-surface focus:border-primary focus:text-gray-700 focus:shadow-inset focus:outline-none dark:border-white/70 dark:text-white  file:dark:text-white" 
+           >
+        <option selected>Phone</option>
+        <option value="">Valeur 2</option>
+        <option value="">Valeur 3</option>
+      </select>
+      <label
+      class="mt-2 inline-block  text-blue-900 dark:text-neutral-400"
+      >IMEI</label>
+    <input 
+      placeholder="Value"
+      class="relative m-0 px-2 block w-full min-w-0 flex-auto cursor-pointer rounded border border-solid border-secondary-500 bg-transparent bg-clip-padding py-[0.32rem] 
+      text-base font-normal text-surface transition duration-300 ease-in-out file:-mx-3 file:-my-[0.32rem] file:me-3 file:cursor-pointer file:overflow-hidden file:rounded-none 
+      file:border-0 file:border-e file:border-solid file:border-inherit file:bg-transparent file:px-3  file:py-[0.32rem] file:text-surface focus:border-primary focus:text-gray-700 f
+      ocus:shadow-inset focus:outline-none focus:border-blue-500 dark:border-white/70 dark:text-white  file:dark:text-white"
+    />
+      <label
+      class="mt-2 inline-block  text-blue-900 dark:text-neutral-400"
+      >GSF ID</label>
+    <input 
+    placeholder="Value"
+      class="relative m-0 block w-full min-w-0 flex-auto cursor-pointer rounded border border-solid border-secondary-500 bg-transparent bg-clip-padding px-2 py-[0.32rem] text-base font-normal 
+      text-surface transition duration-300 ease-in-out file:-mx-3 file:-my-[0.32rem] file:me-3 file:cursor-pointer file:overflow-hidden file:rounded-none file:border-0 file:border-e file:border-solid 
+      file:border-inherit file:bg-transparent file:px-3  file:py-[0.32rem] file:text-surface focus:border-primary focus:text-gray-700 focus:shadow-inset focus:outline-none dark:border-white/70 
+      dark:text-white  file:dark:text-white focus:outline-none focus:border-blue-500"
+    />
+      <label
+      class="mt-2 inline-block  text-blue-900 dark:text-neutral-400"
+      >Installed Version</label>
+      <select class="relative m-0 block w-full min-w-0 flex-auto cursor-pointer rounded border border-solid border-secondary-500 bg-transparent bg-clip-padding px-2 py-[0.32rem] text-base font-normal text-surface transition duration-300 ease-in-out file:-mx-3 file:-my-[0.32rem] file:me-3 file:cursor-pointer file:overflow-hidden file:rounded-none file:border-0 file:border-e file:border-solid file:border-inherit file:bg-transparent file:px-3  file:py-[0.32rem] file:text-surface focus:border-primary focus:text-gray-700 focus:shadow-inset focus:outline-none dark:border-white/70 dark:text-white  file:dark:text-white" 
+           >
+        <option selected>V 0.0.1</option>
+        <option value="">Valeur 2</option>
+        <option value="">Valeur 3</option>
+      </select>
+      <label
+      class="mt-2 inline-block  text-blue-900 dark:text-neutral-400"
+      >Device Brand</label>
+      <select class="relative m-0 block w-full min-w-0 flex-auto cursor-pointer rounded border border-solid border-secondary-500 bg-transparent bg-clip-padding px-2 py-[0.32rem] text-base font-normal text-surface transition duration-300 ease-in-out file:-mx-3 file:-my-[0.32rem] file:me-3 file:cursor-pointer file:overflow-hidden file:rounded-none file:border-0 file:border-e file:border-solid file:border-inherit file:bg-transparent file:px-3  file:py-[0.32rem] file:text-surface focus:border-primary focus:text-gray-700 focus:shadow-inset focus:outline-none dark:border-white/70 dark:text-white  file:dark:text-white" 
+           >
+        <option selected>Nokia</option>
+        <option value="">Valeur 2</option>
+        <option value="">Valeur 3</option>
+      </select>
+      <label
+      class="mt-2 inline-block  text-blue-900 dark:text-neutral-400"
+      >Device Brand</label>
+      <select class="relative m-0 block w-full min-w-0 flex-auto cursor-pointer rounded border border-solid border-secondary-500 bg-transparent bg-clip-padding px-2 py-[0.32rem] text-base font-normal text-surface transition duration-300 ease-in-out file:-mx-3 file:-my-[0.32rem] file:me-3 file:cursor-pointer file:overflow-hidden file:rounded-none file:border-0 file:border-e file:border-solid file:border-inherit file:bg-transparent file:px-3  file:py-[0.32rem] file:text-surface focus:border-primary focus:text-gray-700 focus:shadow-inset focus:outline-none dark:border-white/70 dark:text-white  file:dark:text-white" 
+           >
+        <option selected>Model</option>
+        <option value="">Valeur 2</option>
+        <option value="">Valeur 3</option>
+      </select>
+      <label
+      class="mt-2 inline-block  text-blue-900 dark:text-neutral-400"
+      >Device Number</label>     
+      <div class="flex items-center justify-between">
+        <select
+          class="bg-white text-sky-950 border-2 w-[8rem] border-grey-100 rounded py-2"
+        >
+          <option value="+216" selected>+216</option>
+          <option value="+1">+1</option>
+          <option value="+44">+44</option>
+        </select>
+        <div class="relative">
+          <input
+            type="tel"
+            class="ml-1 pl-2 w-[22rem] pr-8 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+            placeholder="91200000000"
+          />
+        </div>
+      </div>
+      <label
+      class="mt-2 inline-block  text-blue-900 dark:text-neutral-400"
+      >Assigned Hotel</label>
+      <select class="relative m-0 block w-full min-w-0 flex-auto cursor-pointer rounded border border-solid border-secondary-500 bg-transparent bg-clip-padding px-2 py-[0.32rem] text-base font-normal text-surface transition duration-300 ease-in-out file:-mx-3 file:-my-[0.32rem] file:me-3 file:cursor-pointer file:overflow-hidden file:rounded-none file:border-0 file:border-e file:border-solid file:border-inherit file:bg-transparent file:px-3  file:py-[0.32rem] file:text-surface focus:border-primary focus:text-gray-700 focus:shadow-inset focus:outline-none dark:border-white/70 dark:text-white  file:dark:text-white" 
+           >
+        <option selected>Maies Ressort</option>
+        <option value="">Valeur 2</option>
+        <option value="">Valeur 3</option>
+      </select>
+      <label
+      class="mt-2 inline-block  text-blue-900 dark:text-neutral-400"
+      >Status</label>
+      <select class="relative m-0 block w-full min-w-0 flex-auto cursor-pointer rounded border border-solid border-secondary-500 bg-transparent bg-clip-padding px-2 py-[0.32rem] text-base font-normal text-surface transition duration-300 ease-in-out file:-mx-3 file:-my-[0.32rem] file:me-3 file:cursor-pointer file:overflow-hidden file:rounded-none file:border-0 file:border-e file:border-solid file:border-inherit file:bg-transparent file:px-3  file:py-[0.32rem] file:text-surface focus:border-primary focus:text-gray-700 focus:shadow-inset focus:outline-none dark:border-white/70 dark:text-white  file:dark:text-white" 
+           >
+        <option selected>Available</option>
+        <option value="">Valeur 2</option>
+        <option value="">Valeur 3</option>
+      </select>
+
+      <button type="button" class=" mt-3 ms-[20.625rem] bg-blue-900 hover:bg-blue-800 text-white font-normal py-2 px-4 border border-gray-400 rounded-full">
+        Add Device
+      </button>
+  </div>
+
